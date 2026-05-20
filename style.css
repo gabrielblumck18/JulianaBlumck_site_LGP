@@ -198,6 +198,12 @@ body {
     color: var(--color-text-dark);
 }
 
+.main-title .send-flowers {
+    font-family: 'Send Flowers', cursive;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
 .cta-secondary {
     font-size: clamp(1.1rem, 1.6vw, 1.25rem);
     color: var(--color-text-dark);
@@ -319,6 +325,10 @@ section {
     font-family: var(--font-serif);
 }
 
+.identificacao-footer p strong {
+    color: #A9CFF0;
+}
+
 /* Timeline */
 /* Jornada Background Assinatura */
 .jornada {
@@ -350,7 +360,7 @@ section {
 .bg-phrase {
     font-family: 'Luxurious Roman', serif;
     font-size: clamp(2rem, 5vw, 4rem);
-    color: var(--color-text-medium);
+    color: #A9CFF0;
     margin-top: -20px;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -561,16 +571,29 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: clamp(30px, 6vw, 80px);
     margin-bottom: 80px;
-    align-items: start;
+    align-items: center;
+}
+
+.footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .footer-logo-img {
-    max-width: 300px;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
+    display: block;
+    width: auto;
+    max-width: clamp(180px, 22vw, 320px);
+    height: auto;
+    filter: brightness(0) invert(1) drop-shadow(0 8px 22px rgba(0, 0, 0, 0.25));
+    opacity: 0.95;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
 }
 
 .footer-heading {
@@ -617,6 +640,7 @@ footer {
     .text-section { order: 2; margin-inline: auto; }
     .image-section { order: 1; width: 100%; justify-content: center; }
     .hero-image { max-width: 450px; mask-image: none; -webkit-mask-image: none; }
+    .footer-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-bottom: 60px; }
 }
 
 @media (max-width: 768px) {
@@ -634,4 +658,3 @@ footer {
     .section-title { font-size: 2.2rem; }
     .btn-primary { width: 100%; }
 }
-
