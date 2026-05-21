@@ -111,10 +111,11 @@ body {
     align-items: center;
     gap: clamp(30px, 6vw, 60px); /* Aumentado horizontalmente */
     width: 100%;
+    height: 90px;
 }
 
 .header-logo-img {
-    height: clamp(90px, 16vh, 150px); /* Aumentado significativamente */
+    height: clamp(51px, 16vh, 40px); /* Aumentado significativamente */
     width: auto;
     object-fit: contain;
     filter: brightness(1.1) contrast(1.1) drop-shadow(0 4px 10px rgba(31, 73, 125, 0.2));
@@ -586,7 +587,7 @@ footer {
 .footer-logo-img {
     display: block;
     width: auto;
-    max-width: clamp(180px, 22vw, 320px);
+    max-width: clamp(90px, 22vw, 160px);
     height: auto;
     filter: brightness(0) invert(1) drop-shadow(0 8px 22px rgba(0, 0, 0, 0.25));
     opacity: 0.95;
